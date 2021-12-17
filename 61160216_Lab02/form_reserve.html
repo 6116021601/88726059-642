@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+select {
+  width: 100%;
+  padding:5px;
+  border-radius:10px;
+}
+
+button {
+
+/* remove default behavior */
+appearance:none;
+-webkit-appearance:none;
+
+/* usual styles */
+padding:10px;
+border:none;
+background-color:#4110f1;
+color:#fff;
+font-weight:600;
+border-radius:5px;
+width:50%;
+}
+
+        </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Form demo</title>
+ 
+</head>
+<body>
+ <h3>Your post these data:</h3>
+ <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/642/88726059/services/post.php">
+    <table>
+        <tr>
+            <td><label for="rommtype">RoomType:</label></td>
+            <td><select name="rommtype">
+                <option value="0">--Select one--</option>
+                <option value="standard">standard</option>
+                 <option value="Luxury">Luxury</option>
+                <option value="Deluxe">Deluxe</option>
+                 </select>  </td>
+        </tr>
+        <tr>
+            <td><label for="numguest">Number of Guests:</label></td>
+            <td><select name="numguest">
+                <option value="0">--Select one--</option>
+                <option value="1-2">1-2</option>
+                <option value="3-4">3-4</option>
+                <option value="5-6">5-6</option>
+                <option value="7-8">7-8</option>
+                 </select> </td>
+        </tr>
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" name="fame" id="fame" >
+            <label for="lname"></label>
+            <input type="text" name="lname" id="lname" ><td>
+           
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="text" name="email" id="email" ></td> 
+            </tr>
+            <tr>
+                <td><label for="arrivaldate">Arrival:</label></td>
+                <td><input type="date" id="arrivaldate" name="arrivaldate">
+                <label for="arrivaltime"></label>
+                <input type="time" id="arrivaltime" name="arrivaltime"></td>
+            
+            </tr>
+            <tr>
+                <td><label for="departuredate">Departure:</label></td>
+                <td><input type="date" id="departuredate" name="departuredate" >
+                <label for="departuretime"></label>
+                <input type="time" id="departuretime" name="departuretime"></td>
+            </tr>
+        <tr>
+            <td><label for="pickup">Free Pickup:</label></td>
+            <td><input type="radio" name="pickup" id="pickup" value="Yes">Yes.Sure!<br> 
+            <input type="radio" name="pickup" id="pickup" value="No">No. I already rented a car.</td>
+        </tr>
+        <tr>
+            <td><label for="flightnum">Flight Number:</label></td>
+            <td><input type="text" name="flightnum" id="flightnum" ></td> 
+        </tr>
+        <tr>
+            <td><label for="otherreq">Orther requests:</label></td>
+              <td><Textarea name="otherreq" id="otherreq" rows="5" cols="50"></Textarea></td>
+            </tr>
+        <tr>
+            <td><label for="summit"></label></td>
+                <td><button>Complete Reservation</button></td>
+        </tr>  
+
+</table>
+ </form>
+</body>
+</html>

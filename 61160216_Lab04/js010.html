@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHange inline text Example</title>
+</head>
+<body>
+<script>
+    var AR=new Array();
+    AR[0] = "Message 1";
+    AR[1] = "Message 2";
+    AR[2] = "Message 3";    
+    var i=0;
+    function next(){
+        i=(++i)%AR.length;
+        document.getElementById("here").innerHTML=AR[i];
+    }
+</script>
+</head>
+</body>
+click on the middle section to have it change  what it says.<BR>
+Text-1
+<HR>
+    <div onclick="next()" id="here">
+        DEFAULT
+    </div>
+    <HR>
+        Text-2
+    </body>
+</html>
